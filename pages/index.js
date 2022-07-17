@@ -1,37 +1,26 @@
-import Head from "next/head";
-import ProductListing from "@components/ProductListing";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
-import { getProductList } from "@api/getProductList";
+import Head from 'next/head'
+import Header from '@components/Header'
+import Footer from '@components/Footer'
 
-export default function Home({ products }) {
+export default function Home() {
   return (
-    <>
+    <div className="container">
       <Head>
-        <title>Cheese and Meat Shop</title>
+        <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
       <main>
-        <ul className="product-grid">
-          {products.map((p, index) => {
-            return <ProductListing key={`product${index}`} product={p.node} />;
-          })}
-        </ul>
+        <Header title="Welcome to my app!" />
+        <p className="description">
+          Get started by editing <code>pages/index.js</code>
+        </p>
+        <p className="description">
+          BOOM!
+        </p>
       </main>
 
       <Footer />
-    </>
-  );
-}
-
-export async function getStaticProps() {
-  const products = await getProductList();
-
-  return {
-    props: {
-      products,
-    },
-  };
+    </div>
+  )
 }
