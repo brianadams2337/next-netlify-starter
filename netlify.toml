@@ -11,3 +11,6 @@
 
   [plugins.inputs]
     enable = false
+
+[functions]
+  directory = "api/functions/"
