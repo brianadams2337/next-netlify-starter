@@ -27,6 +27,6 @@ export default function Home() {
   )
 }
 
-export async function getStaticProps() {
-  return '<div>test</div>';
-}
+// export async function getStaticProps() {
+//   return '<div>test</div>';
+// }
