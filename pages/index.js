@@ -1,8 +1,7 @@
-import Head from "next/head";
-import ProductListing from "@components/ProductListing";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
-import getProductList from "@api/getProductList"
+import Head from 'next/head'
+import ProductListing from '@components/ProductListing'
+import Header from '@components/Header'
+import Footer from '@components/Footer'
 
 export default function Home() {
   return (
