@@ -29,10 +29,4 @@ export default function Home() {
 
 export async function getStaticProps() {
   const products = await getProductList();
-
-  return {
-    props: {
-      products,
-    },
-  };
 }
